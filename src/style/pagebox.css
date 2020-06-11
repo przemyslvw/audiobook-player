@@ -1,0 +1,50 @@
+.pages-box {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.page-box {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+.page-box-active {
+    opacity: 1!important;
+    z-index: 2;
+}
+
+.pageContent {
+    padding-left: 15px;
+    margin-top: 10px;
+    height: 550px;
+}
+.pageContent-roll {
+    overflow-y: scroll;
+    max-height: 550px;
+}
+
+.pageContent a {
+    color: white!important;
+}
+.pageContent img {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.lista1 {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 4px;
+  
+}
+
+.lista4 {
+    color: black;
+}

@@ -1,0 +1,53 @@
+.track-line {
+    padding: 15px;
+    padding-left: 0px;
+    margin-left: 15px;
+    border-bottom: 1px solid rgba(97,80,50,1);
+    z-index: 0;
+    position: relative;
+    font-weight: 500;
+    color: rgb(63, 52, 32);
+    display: flex;
+    cursor: pointer;
+}
+
+.track-line-active {
+    margin-top: -1px;
+    position: relative;
+    border-top-left-radius: 20px;
+    margin-left: 0px;
+    border-bottom-left-radius: 20px;
+    background-color: #bfb9a3;
+    border-bottom: 0px solid black;
+    padding-left: 15px!important;
+    color: rgba(97,80,50,1);
+    margin-bottom: 1px;
+  }
+  
+  .audioname {
+    padding-right: 15px;
+    width: 93%;
+  }
+
+ .audiotime {
+    align-content:  flex-end;
+  }
+
+  .signature {
+    border-bottom: 0px!important;
+    padding-bottom: 0px;
+  }
+  .signature:last-child {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .signature .audioname {
+    width: 50%!important;
+    
+  }
+  .signature .audiotime {
+      width: 50%;
+    text-align: right;
+  }

@@ -1,0 +1,35 @@
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px!important;
+  }
+  
+  .rhap_container {
+    background-color: #ffffff00!important;
+    box-shadow: none!important;
+  }
+  
+  .rhap_progress-indicator {
+  
+    background: #948365!important;
+  }
+  
+  .rhap_main-controls-button {
+    color: #948365!important;
+  }
+  
+  .rhap_repeat-button {
+    color: #948365!important;
+  }
+  
+  .rhap_volume-button {
+    color: #948365!important;
+  }
+  
+  .rhap_volume-indicator {
+    background-color: #948365!important;
+  }
+  
+  .rhap_time {
+    color: #948365!important;
+    font-weight: 600;
+  }

@@ -1,24 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './style/App.css';
+import './style/track.css';
+import Player from './components/Player'
+import Menu from './components/Menu'
+import okladka from './images/okladka.jpg'
+import { Summary } from './pages/Summary';
+import { Author } from './pages/Author';
+import { Publishing } from './pages/Publishing';
+import { Board } from './pages/Board'
 
-function App() {
+function App() {  
+
+  const [ currentPlay, setCurretnPlay ] = useState(0);
+  const [ activeCart, setActiveCart ] = useState("board");
+
+  function handleClick(i) {
+    setCurretnPlay(parseInt(i))
+  }
+
+  function onEnd() {
+    setCurretnPlay(currentPlay+1)
+  }
+
+  function changeActiveCart(i) {
+    setActiveCart(i)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-container">
+          <div className="side left-side">
+            <div className="cover-box">
+              <img className="cover" src={ okladka } alt="cover" />
+            </div>
+            <div className="player-box">
+              <Player currentPlay={ currentPlay } onEnd = { onEnd }/>
+            </div>
+          </div>
+
+          <div className="side right-side">
+            <Menu activeCart={ activeCart } changeActiveCart={ changeActiveCart } />
+            <div className="pages-box">
+              <Board activeCart={ activeCart } currentPlay={ currentPlay } handleClick={ handleClick } />
+              <Summary activeCart={ activeCart } />
+              <Author activeCart={ activeCart } />
+              <Publishing activeCart={ activeCart } />
+            </div>
+          </div>
+        </div>
     </div>
   );
 }

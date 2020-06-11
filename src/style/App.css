@@ -1,0 +1,81 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 1150px;
+  border-radius: 24px;
+  display: flex;
+  border: 0px solid;
+  box-shadow: none;
+  margin: 0 auto;
+  background: rgb(119,102,72);
+  background: linear-gradient(41deg, rgba(119,102,72,1) 0%, rgba(169,152,122,1) 35%, rgba(97,80,50,1) 100%);
+  box-shadow: 1px 1px 50px 1px rgba(32, 33, 36, 0.671);
+  }
+
+
+.left-side {
+  height: 100%;
+  width: 40%;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-color: rgba(0, 0, 0, 0);
+  position: relative;
+  background-color: #bfb9a3;
+}
+
+.left-side:after {
+  content: "";
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  background: rgb(119,102,72);
+  background: linear-gradient(41deg, rgba(119,102,72,1) 0%, rgba(169,152,122,1) 35%, rgba(97,80,50,1) 100%);
+  z-index: -1;
+  top: -550px;
+  right: 0;
+  
+}
+
+.right-side {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding-left: 20px;
+}
+
+.audioWrapper {
+  overflow-y: scroll;
+  height: 518px;
+}
+
+.cover-box {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  height: 450px;
+  width: 317px;
+}
+.player-box {
+  height: 14%;
+  
+}
+
+p {
+  margin:0
+}
